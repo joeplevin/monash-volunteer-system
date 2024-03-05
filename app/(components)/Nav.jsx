@@ -13,6 +13,7 @@ const Nav = async () => {
           <Link href="/User">User</Link>
           <Link href="/Member">Member</Link>
           <Link href="/CreateUser">Create User</Link>
+          <Link href="/UploadCV">CV Upload</Link>
           {session ? (
             <Link href="/api/auth/signout?callbackUrl=/">Logout</Link>
           ) : (
