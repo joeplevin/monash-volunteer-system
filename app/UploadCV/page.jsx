@@ -4,7 +4,7 @@ import Nav from '../(components)/Nav'
 const UploadCV = () => {
   return (
     <>
-        <p className="mt-6 text-xl leading-8 text-grey-900 mx-10 mt-10">Please upload your resume down bellow this has to be a PDF file.</p>
+        <p className=" text-xl leading-8 text-grey-900 mx-10 mt-10">Please upload your resume down bellow this has to be a PDF file.</p>
         <div className="col-span-full mt-6">
               <label htmlFor="cover-photo" className="text-l font-bold tracking-tight sm:text-xl leading-6 text-gray-900 mx-10 ">
               Resume Upload
