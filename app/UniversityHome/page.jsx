@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Container, Row, Col, Button } from "react-bootstrap";
 import VolunteeringSchedule from '/app/(components)/VolenteeringSchedule'
 import TaskForm from '/app/(components)/TaskForm';
+import Navbar from "/app/(components)/Navbar";
 
 
 const page = () => {
@@ -36,6 +37,8 @@ const [tasks, setTasks] = useState([]);
   };
 
   return (
+    <>
+    <Navbar />
 
     <div className ="mt-4"><h1 className="mb-10">Dashboard</h1>
     <Container>
@@ -74,6 +77,7 @@ const [tasks, setTasks] = useState([]);
         ))}
       </div>
           </div>
+          </>
           )
           }
 

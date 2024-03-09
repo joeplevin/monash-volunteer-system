@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import StudentForm from '/app/(components)/NewStudentForm';
+import Navbar from "/app/(components)/Navbar";
 
 
 
@@ -20,6 +21,8 @@ const StudentPage = () => {
   };
 
   return (
+    <>
+    <Navbar />
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-2xl font-bold mb-4">Student Volunteer List</h1>
       <div className="flex justify-end mb-4">
@@ -58,6 +61,7 @@ const StudentPage = () => {
         </table>
       </div>
     </div>
+    </>
   );
 };
 
