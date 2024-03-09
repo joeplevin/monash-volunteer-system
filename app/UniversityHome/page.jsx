@@ -39,7 +39,7 @@ const [tasks, setTasks] = useState([]);
   return (
     <>
     <Navbar />
-
+    <div className="mt-4" style={{ background: "linear-gradient(to bottom, #e5e5e5, #a3a3a3)" }}>
     <div className ="mt-4"><h1 className="mb-10">Dashboard</h1>
     <Container>
     <Row className="justify-content-between">
@@ -76,6 +76,7 @@ const [tasks, setTasks] = useState([]);
           <VolunteeringSchedule key={job.id} job={job} />
         ))}
       </div>
+          </div>
           </div>
           </>
           )

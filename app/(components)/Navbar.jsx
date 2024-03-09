@@ -25,7 +25,6 @@ const Navbar = () => {
           <>
             <a href="#" className="block text-white mt-2">Dashboard</a>
             <a href="#" className="block text-white mt-2">Schedule</a>
-            <a href="#" className="block text-white mt-2">User</a>
             <a href="#" className="block text-white mt-2">Inbox</a>
             <a href="#" className="block text-white mt-2">Tasks</a>
           </>

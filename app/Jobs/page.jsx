@@ -38,6 +38,7 @@ const page = () => {
 
     <>
     <Navbar />
+    <div className="mt-4" style={{ background: "linear-gradient(to bottom, #e5e5e5, #a3a3a3)" }}>
     <div><h1>Volenteering</h1></div>
     <div className="mt-8">
           <h2 className="text-xl font-semibold mb-4">Active Jobs: </h2>
@@ -67,6 +68,7 @@ const page = () => {
               <VolunteeringSchedule job={completed} />
             </div>
           ))}
+      </div>
       </div>
       </div>
 

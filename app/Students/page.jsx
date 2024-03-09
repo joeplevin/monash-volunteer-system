@@ -23,6 +23,7 @@ const StudentPage = () => {
   return (
     <>
     <Navbar />
+    <div className="mt-4" style={{ background: "linear-gradient(to bottom, #e5e5e5, #a3a3a3)" }}>
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-2xl font-bold mb-4">Student Volunteer List</h1>
       <div className="flex justify-end mb-4">
@@ -60,6 +61,7 @@ const StudentPage = () => {
           </tbody>
         </table>
       </div>
+    </div>
     </div>
     </>
   );
