@@ -1,4 +1,4 @@
-// StudentForm.jsx
+
 import React, { useState } from 'react';
 
 const StudentForm = ({ onSubmit }) => {

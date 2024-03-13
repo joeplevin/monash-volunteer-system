@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <nav className="bg-gray-800 px-4 py-2 flex items-center justify-between">
       <div className="navbar-logo">
-        <img src="/app/UniversityHome/Logo.jpg" alt="Logo" />
+        <img src="/app/UniversityHome/Logo" alt="Logo"/>
       </div>
       {/* Display the menu or close icon based on the state */}
       {openMenu ? (

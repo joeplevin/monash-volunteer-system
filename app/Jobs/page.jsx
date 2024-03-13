@@ -1,7 +1,8 @@
 "use client";
-import React from 'react'
+import React, { useState } from 'react';
 import VolunteeringSchedule from '/app/(components)/VolenteeringSchedule';
 import Navbar from "/app/(components)/Navbar";
+import JobForm from "/app/(components)/NewJobForm";
 
 const page = () => {
     const activeVolunteeringJobs = [
@@ -34,12 +35,22 @@ const page = () => {
       const chunkedOpportunities = Array.from({ length: Math.ceil(volunteeringOpportunities.length / 4) }, (_, index) =>
     volunteeringOpportunities.slice(index * 4, index * 4 + 4)
     );
+
+    const [showJobForm, setShowJobForm] = useState(false); 
   return (
 
     <>
     <Navbar />
     <div className="mt-4" style={{ background: "linear-gradient(to bottom, #e5e5e5, #a3a3a3)" }}>
     <div><h1>Volenteering</h1></div>
+    <div className="flex justify-between mb-4">
+    <button onClick={() => setShowJobForm(true)} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">
+                        Add New Job
+                    </button>
+            </div>
+                    {showJobForm && <JobForm onSubmit={(newJob) => { console.log("Submitted:", newJob); setShowJobForm(false); }} />}
+
+
     <div className="mt-8">
           <h2 className="text-xl font-semibold mb-4">Active Jobs: </h2>
           {activeVolunteeringJobs.map((job) => (

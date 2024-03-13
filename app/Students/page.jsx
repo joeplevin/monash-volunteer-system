@@ -8,7 +8,7 @@ import Navbar from "/app/(components)/Navbar";
 const StudentPage = () => {
   const [showModal, setShowModal] = useState(false);
   const [students, setStudents] = useState([
-    { id: 1, name: 'John Doe', yearOfStudy: 2, completedJobs: 5, certificates: 2 },
+    { id: 1, name: 'Matilda Deakin', yearOfStudy: 2, completedJobs: 5, certificates: 2 },
     { id: 2, name: 'Jane Smith', yearOfStudy: 3, completedJobs: 7, certificates: 3 },
     // Add more students as needed
   ]);
@@ -26,7 +26,7 @@ const StudentPage = () => {
     <div className="mt-4" style={{ background: "linear-gradient(to bottom, #e5e5e5, #a3a3a3)" }}>
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-2xl font-bold mb-4">Student Volunteer List</h1>
-      <div className="flex justify-end mb-4">
+      <div className="flex justify-between mb-4">
         <button
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
           onClick={() => setShowModal(true)}

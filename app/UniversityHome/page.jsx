@@ -1,9 +1,11 @@
 "use client";
 import React, { useState } from 'react';
 import { Container, Row, Col, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import VolunteeringSchedule from '/app/(components)/VolenteeringSchedule'
 import TaskForm from '/app/(components)/TaskForm';
 import Navbar from "/app/(components)/Navbar";
+import { BrowserRouter as Router } from 'react-router-dom';
 
 
 const page = () => {
@@ -37,18 +39,23 @@ const [tasks, setTasks] = useState([]);
   };
 
   return (
+   <Router>
     <>
     <Navbar />
     <div className="mt-4" style={{ background: "linear-gradient(to bottom, #e5e5e5, #a3a3a3)" }}>
     <div className ="mt-4"><h1 className="mb-10">Dashboard</h1>
     <Container>
     <Row className="justify-content-between">
+    <Link to="/Students">
           <button className="bg-slate-400 text-black px-8 py-10 rounded-lg mr-20">
             Total Students
         </button>
+        </Link>
+        <Link to="/Jobs">
           <button className="bg-slate-400 text-black px-10 py-10 rounded-lg mr-20">
             Active Jobs
         </button>
+        </Link>
           <button className="bg-slate-400 text-black px-6 py-10 rounded-lg">
             Current Charities
         </button>
@@ -79,6 +86,7 @@ const [tasks, setTasks] = useState([]);
           </div>
           </div>
           </>
+          </Router>
           )
           }
 
